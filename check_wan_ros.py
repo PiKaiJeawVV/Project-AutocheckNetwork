@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*- 
 
 from global_file import *
-#from check_banwitd import *
 
 ### Function insert node down to database ###
 def insert_db_down():
@@ -148,9 +147,3 @@ if __name__ == '__main__':
     db_python.close()
     t2 = time.time() - t1
     print(f'Time for run {t2:0.2f}')
-
-
-"""
-msg = 'JHK'
-r = requests.post(url, headers=headers, data = {'message':msg})
-"""
