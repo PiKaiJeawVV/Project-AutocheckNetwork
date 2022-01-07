@@ -138,7 +138,6 @@ if __name__ == '__main__':
         try:
             check_wan_ros()
         except:
-            #print(str(data_send) + " : Node Down !")
             insert_db_down()
             msg = data_send + ' Node Down !'
             requests.post(url, headers=headers, data = {'message':msg})
