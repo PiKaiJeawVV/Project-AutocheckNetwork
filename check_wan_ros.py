@@ -120,13 +120,13 @@ def check_wan_ros():
         status_check_wan = 1
     else:
         status_check_wan = 2
-        if ip == '172.22.2.18': reset_dhcp()
-        elif ip == '172.22.2.22': reset_dhcp()
-        elif ip == '172.22.2.24': reset_dhcp()
-        elif ip == '172.22.2.26': reset_dhcp()
-        elif ip == '172.22.2.27': reset_dhcp()
-        elif ip == '172.22.2.32': reset_dhcp()
-        elif ip == '172.22.2.37': reset_dhcp()
+        if ip == '172.22.x.x': reset_dhcp()
+        elif ip == '172.22.x.x': reset_dhcp()
+        elif ip == '172.22.x.x': reset_dhcp()
+        elif ip == '172.22.x.x': reset_dhcp()
+        elif ip == '172.22.x.x': reset_dhcp()
+        elif ip == '172.22.x.x': reset_dhcp()
+        elif ip == '172.22.x.x': reset_dhcp()
         else:
             reset_pppoe()
 
@@ -146,4 +146,8 @@ if __name__ == '__main__':
             pass
     db_python.close()
     t2 = time.time() - t1
+<<<<<<< HEAD
     print(f'Time for run {t2:0.2f}')
+=======
+    print(f'Time for run {t2:0.2f}')
+>>>>>>> 1ff650c131ffe602321509c15095cf7fbbcdd3b6
