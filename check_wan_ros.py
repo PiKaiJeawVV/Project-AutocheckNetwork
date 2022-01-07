@@ -133,7 +133,6 @@ def check_wan_ros():
 
 ### main function run ###
 if __name__ == '__main__':
-    t1 = time.time()
     for data_send in ip_list:
         ### เช็คว่าติด Error ไหม หากติดทำการ pass แล้ว loop ip อื่นแทน <-- important
         try:
@@ -145,9 +144,3 @@ if __name__ == '__main__':
             requests.post(url, headers=headers, data = {'message':msg})
             pass
     db_python.close()
-    t2 = time.time() - t1
-<<<<<<< HEAD
-    print(f'Time for run {t2:0.2f}')
-=======
-    print(f'Time for run {t2:0.2f}')
->>>>>>> 1ff650c131ffe602321509c15095cf7fbbcdd3b6
